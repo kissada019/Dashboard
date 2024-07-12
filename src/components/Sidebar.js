@@ -4,7 +4,7 @@ import { FaBars, FaCommentAlt, FaRegChartBar, FaShoppingBag, FaTh, FaThList, FaU
 import { NavLink } from 'react-router-dom';
 
 function Sidebar({ children }) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     const toggle = () => setIsOpen(!isOpen)
     const menuItem = [
         {
@@ -44,7 +44,7 @@ function Sidebar({ children }) {
             <div style={{ width: isOpen ? "250px" : "50px" }} className='sidebar'>
                 <div className='top_section'>
                     <h1 style={{ display: isOpen ? "block" : "none" }} className='logo'>Logo</h1>
-                    <div style={{ marginLeft: isOpen ? "50px" : "00px" }} className='bars'>
+                    <div style={{ marginLeft: isOpen ? "80px" : "00px" }} className='bars'>
                         <FaBars onClick={toggle} />
                     </div>
                 </div>

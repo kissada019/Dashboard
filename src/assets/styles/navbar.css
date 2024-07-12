@@ -36,6 +36,7 @@ main {
   display: flex;
   font-size: 25px;
   margin-left: 50px;
+  cursor: pointer;
 }
 .link {
   display: flex;
